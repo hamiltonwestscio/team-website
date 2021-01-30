@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.5;
+  color: #575F66;
+  background-color: #fff; }
+
+a {
+  color: #55B4D4;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.main-nav {
+  display: inline-block;
+  padding: 0 0.5em;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-style: none;
+  border-radius: 0.3rem; }
+  .main-nav .btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem; }
+    .main-nav .btn + .btn {
+      margin-left: 0.5rem; }
+    .main-nav .btn.div-btn-wrapper {
+      border-style: dashed; }
+    .main-nav .btn.fade:hover {
+      color: rgba(255, 255, 255, 0.8);
+      border-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: background-color 0.2s, border-color 0.2s; }
+    .main-nav .btn a {
+      color: rgba(255, 255, 255, 0.7);
+      transition: color 0.1s; }
+    .main-nav .btn a:hover {
+      text-decoration: none; }
+    .main-nav .btn .division-btn {
+      display: inline-block;
+      background: none;
+      width: 1.5rem;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      border-radius: 50%;
+      border-width: 2px;
+      font-weight: bold; }
+    .main-nav .btn .feather {
+      width: 1rem;
+      height: 1rem;
+      margin: 0 0.4rem 0 -0.2rem;
+      stroke: currentColor;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round; }
+
+.page-header {
+  color: #CBCCC6;
+  text-align: center;
+  background-color: #1F2430;
+  background-image: url("/header-background.svg");
+  padding: 8.09vh 16.18vw; }
+
+.project-name {
+  color: #FFCC66;
+  margin-top: 0;
+  margin-bottom: 0.1rem; }
+  .project-name a:hover {
+    text-decoration: none; }
+  .project-name a {
+    color: inherit; }
+  @media screen and (min-width: 64em) {
+    .project-name {
+      font-size: 4rem; } }
+  @media screen and (min-width: 42em) and (max-width: 64em) {
+    .project-name {
+      font-size: 3.5rem; } }
+  @media screen and (max-width: 42em) {
+    .project-name {
+      font-size: 2rem; } }
+.project-tagline {
+  margin-bottom: 0.618rem;
+  font-weight: normal;
+  opacity: 0.9; }
+  @media screen and (min-width: 64em) {
+    .project-tagline {
+      font-size: 2rem; } }
+  @media screen and (min-width: 42em) and (max-width: 64em) {
+    .project-tagline {
+      font-size: 2rem; } }
+  @media screen and (max-width: 42em) {
+    .project-tagline {
+      font-size: 1.3rem; } }
+.competition-details {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.25rem;
+  font-weight: normal;
+  opacity: 0.9; }
+  .competition-details li {
+    display: inline-block; }
+  .competition-details .feather {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.5rem 0 2rem;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    color: #F07178;
+    fill: #F07178;
+    fill-opacity: 0.3; }
+  @media screen and (min-width: 64em) {
+    .competition-details {
+      font-size: 1.25rem; } }
+  @media screen and (min-width: 42em) and (max-width: 64em) {
+    .competition-details {
+      font-size: 1.15rem; } }
+  @media screen and (max-width: 42em) {
+    .competition-details {
+      font-size: 1rem; } }
+.main-content {
+  word-wrap: break-word; }
+  .main-content :first-child {
+    margin-top: 0; }
+  @media screen and (min-width: 64em) {
+    .main-content {
+      max-width: 64rem;
+      padding: 2rem 6rem;
+      margin: 0 auto;
+      font-size: 1.1rem; } }
+  @media screen and (min-width: 42em) and (max-width: 64em) {
+    .main-content {
+      padding: 2rem 4rem;
+      font-size: 1.1rem; } }
+  @media screen and (max-width: 42em) {
+    .main-content {
+      padding: 2rem 1rem;
+      font-size: 1rem; } }
+  .main-content img {
+    max-width: 100%; }
+  .main-content h1,
+  .main-content h2,
+  .main-content h3,
+  .main-content h4,
+  .main-content h5,
+  .main-content h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #FF9940; }
+  .main-content p {
+    margin-bottom: 1em; }
+  .main-content code {
+    padding: 2px 4px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.9em;
+    color: #567482;
+    background-color: #f3f6fa;
+    border-radius: 0.3rem; }
+  .main-content pre {
+    padding: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    color: #567482;
+    word-wrap: normal;
+    background-color: #f3f6fa;
+    border: solid 1px #dce6f0;
+    border-radius: 0.3rem; }
+    .main-content pre > code {
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+      color: #567482;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0; }
+  .main-content .highlight {
+    margin-bottom: 1rem; }
+    .main-content .highlight pre {
+      margin-bottom: 0;
+      word-break: normal; }
+  .main-content .highlight pre,
+  .main-content pre {
+    padding: 0.8rem;
+    overflow: auto;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    border-radius: 0.3rem;
+    -webkit-overflow-scrolling: touch; }
+  .main-content pre code,
+  .main-content pre tt {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0; }
+    .main-content pre code:before, .main-content pre code:after,
+    .main-content pre tt:before,
+    .main-content pre tt:after {
+      content: normal; }
+  .main-content ul,
+  .main-content ol {
+    margin-top: 0; }
+  .main-content blockquote {
+    padding: 0 1rem;
+    margin-left: 0;
+    color: #819198;
+    border-left: 0.3rem solid #dce6f0; }
+    .main-content blockquote > :first-child {
+      margin-top: 0; }
+    .main-content blockquote > :last-child {
+      margin-bottom: 0; }
+  .main-content table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+    -webkit-overflow-scrolling: touch; }
+    .main-content table th {
+      font-weight: bold; }
+    .main-content table th,
+    .main-content table td {
+      padding: 0.5rem 1rem;
+      border: 1px solid #e9ebec; }
+  .main-content dl {
+    padding: 0; }
+    .main-content dl dt {
+      padding: 0;
+      margin-top: 1rem;
+      font-size: 1rem;
+      font-weight: bold; }
+    .main-content dl dd {
+      padding: 0;
+      margin-bottom: 1rem; }
+  .main-content hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: #eff0f1;
+    border: 0; }
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.5rem;
+  color: #86B300;
+  border: 1px solid #86B300;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+
+.homepage-logo-wrapper {
+  margin: 50px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .homepage-logo-wrapper .homepage-logo {
+    width: 180px;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.618; }
+
+.site-footer {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: solid 1px #eff0f1; }
+  @media screen and (min-width: 64em) {
+    .site-footer {
+      font-size: 1rem; } }
+  @media screen and (min-width: 42em) and (max-width: 64em) {
+    .site-footer {
+      font-size: 1rem; } }
+  @media screen and (max-width: 42em) {
+    .site-footer {
+      font-size: 0.9rem; } }
+.site-footer-owner {
+  display: block;
+  font-weight: bold; }
+
+.site-footer-credits {
+  color: #819198; }
+
+.feather {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none; }
+
+.gform-embed {
+  width: 100%;
+  min-height: 600px;
+  border: 2px solid #eff0f1;
+  border-radius: 0.3rem; }

@@ -1,0 +1,43 @@
+<section class="page-header">
+  <h2 class="project-tagline">
+    {{ with $.Site.Data.tournament.tagline }}
+      {{ $.Site.Data.tournament.tagline | default "add tagline to data/tournament.toml" | markdownify }}
+    {{ end }}
+  </h2>
+    <h1 class="project-name">
+      <a href="{{ .Site.BaseURL }}">
+      {{ $.Site.Data.tournament.name | default "add tournament name to data/tournament.toml" | markdownify }}
+    </a>  
+
+    </h1>
+  <ul class="competition-details">
+    {{ with $.Site.Data.tournament.date }}
+      <li><i class="feather" data-feather="calendar"></i>{{ . | markdownify}}
+    {{ end }}
+    {{ with $.Site.Data.tournament.location }}
+      <li><i class="feather" data-feather="calendar"></i>{{ . | markdownify}}
+    {{ end }}
+    <li><i class="feather" data-feather="map-pin"></i>{{ $.Site.Data.tournament.location | default "location" | markdownify}}
+  </ul>
+  <nav class="main-nav">
+    {{ $current := . }}
+    {{ range .Site.Menus.nav }}
+      {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+      {{ $active = or $active (eq .Name $current.Title) }}
+      {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "post")) }}
+      {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
+      {{ if .HasChildren }}
+      <div class="btn div-btn-wrapper">
+        <a href="{{ .URL }}"><i class="feather" data-feather="{{ .Pre }}"></i>{{ .Name }}:</a>
+        {{ range .Children }}
+          <a href="{{ .URL }}" class="sub-menu division-btn btn fade">{{ .Name }}</a>
+        {{ end }}
+      </div>
+      {{ else }}
+      <div class="btn fade">
+        <a href="{{ .URL }}"><i class="feather" data-feather="{{ .Pre }}"></i>{{ .Name }}</a>
+      </div>
+      {{ end }}
+    {{ end }}
+  </nav>
+</section>

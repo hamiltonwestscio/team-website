@@ -1,0 +1,54 @@
+baseURL = "https://hamiltonwestscio.com"
+languageCode = "en-us"
+title = "Hamilton/West Science Olympiad"
+theme = "cayman-hugo-theme"
+
+# a restriction of Github Pages, put built website into "docs" directory
+publishDir = "docs"
+
+[Params]
+header_title_color = "#FFCC66"
+header_heading_color = "#CBCCC6"
+header_details_color = "#F07178"
+header_background_color = "#1F2430"
+header_background_color_secondary = "#8A919959"
+header_background_color_tertiary = "#F24236"
+overall-bg-color = "#FAFAFA"
+section_headings_color = "#FF9940"
+body_text_color = "#575F66"
+body_link_color = "#55B4D4"
+
+[menu]
+  [[menu.nav]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+
+  [[menu.nav]]
+    name = "Scioly.org"
+    pre = "globe"
+    url = "https://scioly.org"
+    weight = 2
+
+  [[menu.nav]]
+    identifier = "Hamilton Wiki Page"
+    name = "B"
+    parent = "Scioly.org"
+    url = "https://scioly.org/wiki/index.php/Hamilton_Middle_School_(Wisconsin)"
+    weight = 1
+  
+  [[menu.nav]]
+    identifier = "West Wiki Page"
+    name = "C"
+    parent = "Scioly.org"
+    url = "https://scioly.org/wiki/index.php/Madison_West_High_School"
+    weight = 2
+
+  [[menu.nav]]
+    name = "Badger Invitational"
+    pre = "star"
+    url = "https://badger-invitational.hamiltonwestscio.com"
+    weight = 3
+[markup.goldmark.renderer]
+  unsafe = true

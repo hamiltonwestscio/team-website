@@ -1,0 +1,5 @@
+<div class="homepage-logo-wrapper">
+    {{ range .Site.Data.sponsors.logo }}
+      <img class="homepage-logo" src="{{ .Site.BaseURL }}/{{ .src }}" alt="{{ .alt }}"></img>
+    {{ end }}
+</div>

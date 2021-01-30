@@ -1,0 +1,13 @@
+# This file specifies the logos to be shown on the homepage footer
+
+[[logo]]
+    alt = "Millipore Sigma"
+    src = "logos/milliporesigma.svg"
+    
+[[logo]]
+    alt = "Illumina"
+    src = "logos/illumina.svg"
+
+[[logo]]
+    alt = "Wisconsin Science Olympiad"
+    src = "logos/wiscio.svg"
